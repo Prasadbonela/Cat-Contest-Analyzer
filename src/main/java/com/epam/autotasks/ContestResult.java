@@ -1,8 +1,10 @@
 package com.epam.autotasks;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 @Getter
+@EqualsAndHashCode
 public class ContestResult {
 
     private final Integer running;
@@ -18,6 +20,6 @@ public class ContestResult {
     }
 
     public Integer countResults(Integer running, Integer jumping, Integer purring) {
-        return null;
+        return running + jumping + purring;
     }
 }
